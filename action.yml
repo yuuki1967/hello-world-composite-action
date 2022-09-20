@@ -1,7 +1,7 @@
 name: 'Test Hello World'
 description: 'Greet someone'
 inputs:
-  MY_NAME:  # id of input
+  foo:  # id of input
     description: 'Who to greet'
     required: true
     default: 'World'
