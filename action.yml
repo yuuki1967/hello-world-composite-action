@@ -1,16 +1,16 @@
 name: 'Hello World'
 description: 'Greet Someone'
 inputs:
-    MY_NAME:
-        description: 'Who to greet'
-        required: true
-        default: 'World'
+  MY_NAME:
+    description: 'Who to greet'
+    required: true
+    default: 'World'
 outputs:
-    random-number:
-        description: "Random Number"
-        value: ${{ steps.random-generator.outputs.random-number }}
+  random-number:
+    description: "Random Number"
+    value: ${{ steps.random-generator.outputs.random-number }}
 runs:
-    using: "composite"
-    steps:
-        - run: echo Hello ${{ inputs.MY_NAME }}.
-          shell: bash
+  using: "composite"
+  steps:
+    - run: echo Hello ${{ inputs.MY_NAME }}.
+      shell: bash
