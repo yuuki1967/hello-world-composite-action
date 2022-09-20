@@ -2,8 +2,8 @@ name: "Hello World"
 description: 'Greet someone'
 inputs:
   who-to-greet:　'yuuki1967'
-  description: true
-  default: 'World'
+    description: true
+    default: 'World'
 outputs:
   random-number:
     description: 'Raddom number'
